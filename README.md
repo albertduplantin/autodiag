@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Assistant de Diagnostic Maintenance
 
-## Getting Started
+Une application web interactive pour aider les agents de maintenance à diagnostiquer les pannes des systèmes automatisés, inspirée par le concept d'Akinator.
 
-First, run the development server:
+## Fonctionnalités
 
+- 🔍 Diagnostic interactif par questions successives
+- 📚 Documentation technique intégrée
+- 📊 Historique des diagnostics
+- 📱 Interface responsive
+- 🛠 Solutions détaillées pour chaque problème identifié
+
+## Technologies utilisées
+
+- Next.js 13+ avec App Router
+- TypeScript
+- Tailwind CSS
+- React
+
+## Installation
+
+1. Clonez le repository :
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone [URL_DU_REPO]
+cd diagnostic
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Installez les dépendances :
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Lancez le serveur de développement :
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur.
 
-## Learn More
+## Structure du projet
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/
+│   ├── page.tsx            # Page d'accueil
+│   ├── layout.tsx          # Layout principal
+│   ├── globals.css         # Styles globaux
+│   ├── diagnostic/         # Module de diagnostic
+│   ├── documentation/      # Documentation technique
+│   └── historique/        # Historique des diagnostics
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Déploiement
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+L'application peut être déployée sur Vercel ou tout autre hébergeur compatible avec Next.js.
 
-## Deploy on Vercel
+## Contribution
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou à soumettre une pull request.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Licence
+
+MIT
